@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "style.css">
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Pacifico">	
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lato">
+	<script src = "control.js"></script>		
+	<title>Mistragran | The best image editor ever</title>
+</head>
+<body>
+	<header class="center">
+		<h1>Mistragran</h1>
+	</header>
+	<section>
+		<article>
+			<img src="city.jpg" id="img">
+		</article>
+	</section>
+	<aside>
+		<ul>
+			<li>
+				<label for="grayscale">Escala de grises: </label>
+				<input type="range" name="grayscale" id="grayscale" value="0" min="0" max="100" onchange="setGrayscale(this.value)"><br><br>
+			</li>
+			<li>
+				<label for="sepia">Sepia: </label>
+				<input type="range" name="sepia" id="sepia" value="0" min="0" max="100" onchange="setSepia(this.value)"><br><br>
+			</li>
+			<li>
+				<label for="invert">Negativo: </label>
+				<input type="range" name="invert" id="invert" value="0" min="0" max="100" onchange="setInvert(this.value)"><br><br>
+			</li>
+			<li>
+				<label for="brightness">Brillo: </label>
+				<input type="range" name="brightness" id="brightness" value="100" min="0" max="500" onchange="setBrightness(this.value)"><br><br>
+			</li>			
+			<li>
+				<label for="contrast">Contraste: </label>
+				<input type="range" name="contrast" id="contrast" value="100" min="0" max="500" onchange="setContrast(this.value)"><br><br>
+			</li>			
+			<li>
+				<label for="saturate">Saturación: </label>
+				<input type="range" name="saturate" id="saturate" value="100" min="0" max="500" onchange="setSaturate(this.value)"><br><br>
+			</li>
+			<li>
+				<label for="opacity">Opacidad: </label>
+				<input type="range" name="opacity" id="opacity" value="100" min="0" max="100" onchange="setOpacity(this.value)"><br><br>
+			</li>
+			<li>
+				<label for="blur">Desenfoque: </label>
+				<input type="range" name="blur" id="blur" value="0" min="0" max="10" onchange="setBlur(this.value)"><br><br>
+			</li>
+			<li>
+				<label for="rotate">Tono: </label>
+				<input type="range" name="rotate" id="rotate" value="0" min="0" max="360" onchange="setRotate(this.value)"><br><br>
+			</li>					
+			<li>
+				<button onclick="reset()">Reset</button>
+			</li>
+		</ul>
+		<p id="demo"></p>
+	</aside>
+<footer><p>Coded by Diestro Corleone.<br><a href="mailto:matias.perez.mcd@gmail.com">Send me an e-mail!</a></p></footer>
+</body>
+</html>
