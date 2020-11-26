@@ -28,6 +28,11 @@ function setInvert(percentage){
 	applyFilter();
 }
 
+function setSaturate(percentage){
+	invert = "saturate("+percentage+"%) ";
+	applyFilter();
+}
+
 function setOpacity(percentage){
 	opacity = "opacity("+percentage+"%) ";
 	applyFilter();
